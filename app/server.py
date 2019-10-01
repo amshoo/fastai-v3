@@ -9,7 +9,7 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://drive.google.com/open?id=1-osEVBrXckXCeebVng-RzywE8FGNaq7E'
+export_file_url = 'https://drive.google.com/drive/folders/1Uy-f82ZXyIEb2sRa86JKMh6QHztyBsoD'
 export_file_name = 'export.pkl'
 
 classes = ['Acne disease','Chickenpox disease','Eczema disease','Hives disease','Warts disease','Measles disease','Psoriasis disease']

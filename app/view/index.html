@@ -12,7 +12,7 @@
 	<div class=" w3-margin">
 	<div class="w3-container w3-center">
 		<div class=''>
-			<img src="images/logo.png" style="width:200px"/>
+			<img src="../static/images/logo.png" style="width:200px"/>
 		</div>	
 		<p>click on <img src="../static/images/cam1.png" style="width:20px"/> select or Snap a Skin image</p>
 			  
@@ -20,28 +20,20 @@
 
     <div class="w3-container w3-center">	
 
-		<div class='no-display'>
-        <input id='file-input'
+		<input id='file-input'
                class='no-display'
                type='file'
                name='file'
                accept='image/*'
                onchange='showPicked(this)'>
       </div>
+      <button class='choose-file-button' type='button' onclick='showPicker()'><img src="../static/images/cam1.png" style="width:50px"/></button>
+	  
 		<div class='upload-label'>
         <label id='upload-label'>No file chosen</label>
 		</div>
 		<img id='image-picked' class='no-display' alt='Snap or Chosen Skin desease' style="width:50%" height='150'>
 	
-
-      <div class="w3-section">
-		  <div class="image-upload choose-file-button" type='button' onclick='showPicker()'>
-				<label for="file-input">
-					<img src="../static/images/cam1.png" style="width:50px"/>
-				</label>
-				<input id="file-input" type="file"/>
-		  </div>  		
-      </div>
     </div>
 
 	</div>

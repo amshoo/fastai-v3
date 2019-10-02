@@ -1,14 +1,17 @@
 body {
     background-color: #fff;
+	font-family: "Courier New",  serif;
 }
-
+p{
+	font-family: "Courier New", serif;
+}
 .no-display {
     display: none;
 }
 
 .center {
     margin: auto;
-    padding: 10px 50px;
+    padding: 10px 20px;
     text-align: center;
     font-size: 14px;
 }
@@ -16,17 +19,15 @@ body {
 .title {
     font-size: 30px;
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 5em;
     color: #262626;
 }
 
 .content {
-    margin-top: 10em;
+    margin-top: 1em;
 }
 
-.analyze {
-    margin-top: 5em;
-}
+
 
 .upload-label {
     padding: 10px;
@@ -36,29 +37,63 @@ body {
 .result-label {
     margin-top: 0.5em;
     padding: 10px;
-    font-size: 13px;
+    font-size: 14px;
+}
+
+.start{
+	border-radius: 100%;
+	width:150px;
+	height:150px;
+	background-color: #009e73;
+	border-width: 5px;
+	border-bottom: 6px solid green;
+	 color: white;
+	text-shadow: 2px 2px 4px #000000;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: "Verdana", Times, serif;
+	
 }
 
 button.choose-file-button {
-    width: 200px;
-    height: 40px;
-    border-radius: 2px;
-    background-color: #ffffff;
-    border: solid 1px #7052CB;
-    font-size: 13px;
-    color: #7052CB;
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+ 
 }
 
-button.analyze-button {
-    width: 200px;
-    height: 40px;
-    border: solid 1px #7052CB;
-    border-radius: 2px;
-    background-color: #7052CB;
-    font-size: 13px;
-    color: #ffffff;
+
+.image-upload > input
+{
+    display: none;
 }
 
-button:focus {
-    outline: 0;
+.choose-file-button{
+	width: 50px;
+	padding: 25px 25px;
+	background-color: #049a72;
+	border-radius: 100%;
+
+}
+.analyze-button{
+
+	background-color: #049a72;
+
+}
+
+.image-upload img
+{
+    width: 50px;
+    cursor: pointer;
+}
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }

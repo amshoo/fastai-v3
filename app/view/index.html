@@ -3,38 +3,48 @@
   <meta charset='utf-8'>
   <link rel='stylesheet' href='../static/style.css'>
   <script src='../static/client.js'></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div>
-  <div class='center'>
-    <div class='title'>Classify Skin Disease Images</div>
-    <p>
-      Use images of <strong>Acne</strong> disease, <strong>Chickenpox</strong> disease, <strong>Hives</strong> disease, or all three!
-    </p>
-    <div class='content'>
-      <div class='no-display'>
-        <input id='file-input'
-               class='no-display'
-               type='file'
-               name='file'
-               accept='image/*'
-               onchange='showPicked(this)'>
-      </div>
-      <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
-      <div class='upload-label'>
-        <label id='upload-label'>No file chosen</label>
-      </div>
-      <div>
-        <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
-      </div>
-      <div class='analyze'>
-        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
-      </div>
-      <div class='result-label'>
-        <label id='result-label'></label>
-      </div>
-    </div>
-  </div>
-</div>
+
+		<div class="w3-card w3-margin w3-padding">
+
+			<div class="w3-container w3-center">
+				<div class=''>
+					<img src="images/logo.png" style="width:200px"/>
+				</div>	
+			  <p>Skindiz is a WebApp design for skin Disease Classification Using Images Processing...</p>
+			  
+			</div>
+		</div>
+		<div class="w3-container w3-padding-64 w3-center">		
+			<div class="w3-bar  w3-circle">
+			<a href="home.html">
+			  <button href="home.html"  class=" Start">Classifier</button>
+			  <a>
+			</div>
+		</div>
+	
+		<div class="w3-container">
+		  <button onclick="myFunction()" class="w3-btn"><i class="fa fa-info-circle"></i></button>
+		  <div id="Demo" class="w3-hide w3-padding w3-container">
+				coming soon!!!
+		  
+		  </div>
+		</div>
+
+		<script>
+		function myFunction() {
+		  var x = document.getElementById("Demo");
+		  if (x.className.indexOf("w3-show") == -1) {
+			x.className += " w3-show";
+		  } else {
+			x.className = x.className.replace(" w3-show", "");
+		  }
+		}
+		</script>
+
 </body>
 </html>

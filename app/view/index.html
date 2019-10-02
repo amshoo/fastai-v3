@@ -9,31 +9,105 @@
 <body>
 <div>
 
-		<div class="w3-card w3-margin w3-padding">
-
-			<div class="w3-container w3-center">
-				<div class=''>
-					<img src="images/logo.png" style="width:200px"/>
-				</div>	
-			  <p>Skindiz is a WebApp design for skin Disease Classification Using Images Processing...</p>
+	<div class=" w3-margin">
+	<div class="w3-container w3-center">
+		<div class=''>
+			<img src="images/logo.png" style="width:200px"/>
+		</div>	
+		<p>click on <img src="../static/images/cam1.png" style="width:20px"/> select or Snap a Skin image</p>
 			  
-			</div>
+	</div>
+
+    <div class="w3-container w3-center">	
+
+		<div class='no-display'>
+        <input id='file-input'
+               class='no-display'
+               type='file'
+               name='file'
+               accept='image/*'
+               onchange='showPicked(this)'>
+      </div>
+		<div class='upload-label'>
+        <label id='upload-label'>No file chosen</label>
 		</div>
-		<div class="w3-container w3-padding-64 w3-center">		
-			<div class="w3-bar  w3-circle">
-			<a href="home.html">
-			  <button href="home.html"  class=" Start">Classifier</button>
+		<img id='image-picked' class='no-display' alt='Snap or Chosen Skin desease' style="width:50%" height='150'>
+	
+
+      <div class="w3-section">
+		  <div class="image-upload choose-file-button" type='button' onclick='showPicker()'>
+				<label for="file-input">
+					<img src="../static/images/cam1.png" style="width:50px"/>
+				</label>
+				<input id="file-input" type="file"/>
+		  </div>  		
+      </div>
+    </div>
+
+	</div>
+	<div class="w3-container" style="width:100%">
+		<p>click on 'Analyze' below to GET the name of the disease.</p>
+	</div>
+	<div class="w3-card w3-margin w3-cell-row" style="width:100%">
+
+		  <div class="w3-container w3-padding  w3-cell" style="width:10%">
+		  <div class="w3-container w3-center">		
+			<div class="w3-bar  analyze w3-circle">		
+			  <button id='analyze-button' class='Start' type='button' onclick='analyze()'>Analyze</button>
 			  <a>
 			</div>
 		</div>
-	
-		<div class="w3-container">
+		  </div>
+
+		  <div class="w3-container w3-cell" style="width:90%">
+			<div class='result-label'>
+				<label id='result-label'></label>
+			 </div>			 
+		  </div>	  
+
+	</div>
+	<div class="w3-container">
 		  <button onclick="myFunction()" class="w3-btn"><i class="fa fa-info-circle"></i></button>
 		  <div id="Demo" class="w3-hide w3-padding w3-container">
-				coming soon!!!
-		  
+				<p>Skindiz is a WebApp design for skin Disease Classification Using Images Processing...</p>
+				<p>This app can only classicty three skin desease..<p>
+
+				<div class="w3-row-padding">
+				  <div class="w3-container w3-cell">
+					<img src="../static/images/hives.jpg" style="width:120px;cursor:pointer" 
+					onclick="onClick(this)" class="w3-hover-opacity">
+					Hives disease
+				  </div>
+				  <div class="w3-container w3-cell">
+					<img src="../static/images/chickenpox.jpg" style="width:120px;cursor:pointer" 
+					onclick="onClick(this)" class="w3-hover-opacity">
+					Chickenpox disease
+				  </div>
+				  <div class="w3-container w3-cell">
+					<img src="../static/images/acne.jpg" style="width:120px;cursor:pointer" 
+					onclick="onClick(this)" class="w3-hover-opacity">
+					Acne disease
+				  </div>
+				</div>
+
+				<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+				  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+				  <div class="w3-modal-content w3-animate-zoom">
+					<img id="img01" style="width:100%">
+					
+				  </div>
+				  
+				</div>
+
+				<script>
+				function onClick(element) {
+				  document.getElementById("img01").src = element.src;
+				  document.getElementById("modal01").style.display = "block";
+				}
+				</script>
+			  
 		  </div>
-		</div>
+	</div>
 
 		<script>
 		function myFunction() {
@@ -45,6 +119,9 @@
 		  }
 		}
 		</script>
-
+	
+	
+ 
+</div>
 </body>
 </html>

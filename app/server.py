@@ -9,7 +9,7 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://doc-10-74-docs.googleusercontent.com/docs/securesc/terac3mflt6j9oerbmunvfhaguom98ne/9vdp6n5l5pdr02iief7p4gspcmtportp/1569988800000/05744244217329630873/05744244217329630873/10LtUvKOeCQdV9LBRg_1wtY5dl4obOwo4?e=download&nonce=hcdtl30q8cgp4&user=05744244217329630873&hash=8luaoo2bi87vku687h9oqr33fa7j1jfh'
+export_file_url = 'https://drive.google.com/uc?authuser=0&id=10LtUvKOeCQdV9LBRg_1wtY5dl4obOwo4&export=download'
 export_file_name = 'export.pkl'
 
 classes = ['Acne_disease','Chickenpox_disease','Hives_disease']
